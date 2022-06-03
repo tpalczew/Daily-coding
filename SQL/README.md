@@ -25,8 +25,11 @@ docker run --name ms_sql_server -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=123Tom!' -p 1
 
 4) 127.0.0.1
 
-5) user name and password
+5) user name and password (password needs to be 8 characters or longer)
 
 6) add connection profile name 
 
+# You can now write sql in VS CODE 
+
+SELECT * FROM sys.dm_os_host_info
 
