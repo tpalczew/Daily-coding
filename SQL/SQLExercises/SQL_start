@@ -1,0 +1,19 @@
+--CREATE DATABASE exercises
+/*
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+    )
+*/
+
+--SELECT * FROM Persons
+
+/*
+INSERT INTO Persons (PersonID, LastName, FirstName, Address, City)
+VALUES ('1', 'Tom B.', 'Erichsen', 'Long Street', 'San Francisco')
+*/
+
+--SELECT * FROM Persons
