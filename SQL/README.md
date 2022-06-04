@@ -33,3 +33,13 @@ docker run --name ms_sql_server -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=123Tom!' -p 1
 
 SELECT * FROM sys.dm_os_host_info
 
+
+# Option 2 
+
+pip install ipython-sql
+
+## In your jupyter notebook 
+
+%load_ext sql 
+
+%sql sqlite://
