@@ -16,26 +16,31 @@ let's do a few examples
 '''
 
 def solution(string , index , subs):
-     
-    #print('index ', index)
-    #print('string ', string)
-    #print('subs ', subs)
-
     if index == len(string):
         print(subs)
-        return
-     
-    solution(string, index + 1, subs + string[index])
+        return     
+    solution(string, index + 1, subs + str(string[index]))
     solution(string, index + 1, subs)
      
-
-s1 = "12345"
+s1 = "123"
 index = 0
 subs = ""
 solution(s1, index , subs)
 
 
+# Now use lists, not string 
 
+def solution2(input_list , index , subs):
+    if index == len(input_list):
+        print(subs)
+        return
+    solution2(input_list, index + 1, subs + [ input_list[index] ] )
+    solution2(input_list, index + 1, subs)
+     
+input_list = [1,2,3]
+index = 0
+subs = []
+solution2(input_list, index , subs)
 
 
 
