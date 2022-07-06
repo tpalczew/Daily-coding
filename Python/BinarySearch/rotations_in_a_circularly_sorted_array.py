@@ -49,7 +49,6 @@ print( solution(nums) )
 
 '''
 The time complexity is O( log(n) )
-
 '''
  
 
