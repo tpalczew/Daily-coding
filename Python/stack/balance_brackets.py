@@ -41,7 +41,6 @@ inp_str = "([])[]({})"
 
 print( balance(inp_str) )
 
-
 inp_str = "([)]" 
 
 print( balance(inp_str) )
@@ -49,3 +48,54 @@ print( balance(inp_str) )
 inp_str =  "((()"
 
 print( balance(inp_str) )
+
+inp_str = "(())[[()]]({([])})"
+
+print( balance(inp_str) )
+
+
+def balance2(inp_str):
+    s = []
+    for elem in inp_str:
+        if elem in ["(", "[", "{"]:
+            s.append(elem)
+        else:
+            if elem == ")":
+                if s[-1] == "(":
+                    s.pop()
+                else:
+                    return False
+            if elem == "]":
+                if s[-1] == "[":
+                    s.pop()
+                else:
+                    return False
+            if elem == "}":
+                if s[-1] == "{":
+                    s.pop()
+                else:
+                    return False
+    if s:
+        return False
+    else:
+        return True
+
+print("--------- second --------- ")
+
+inp_str = "([])[]({})"
+
+print( balance2(inp_str) )
+
+inp_str = "([)]" 
+
+print( balance2(inp_str) )
+
+inp_str =  "((()"
+
+print( balance2(inp_str) )
+
+inp_str = "(())[[()]]({([])})"
+
+print( balance2(inp_str) )
+
+ 
