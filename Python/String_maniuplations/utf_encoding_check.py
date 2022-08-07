@@ -21,6 +21,11 @@ def solution(inp_arr):
 
         print(bin_rep)
 
+# we have encoding 
+# now we need to add these checks 
+
+
+
 
 inp_arr = [197, 130, 1]
 
