@@ -67,7 +67,6 @@ llist2.push(3)
 
 #llist2.printList()
 
-
 llist.head = merge(llist.head, llist2.head)
 
 llist.printList()
