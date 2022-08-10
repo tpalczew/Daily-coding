@@ -39,16 +39,12 @@ def overlapping(l0, l1):
     #print("l1_len", l1_len)
     if l0_len > l1_len:
         l0, l1 = l1, l0 # swap so l1 is the longer list 
-    
-    new_l1_len = length(l1)
+    #new_l1_len = length(l1)
     #print("l1_len after swap", new_l1_len)
-
     for i in range( abs(l0_len - l1_len) ):
         #print(l1.data)
         l1 = l1.next
-
     #print("l1.data after move ", l1.data)
-    
     # now we can start comparing and moving forward 
     while l0 and l1 and l0.data is not l1.data:
         #print(l0.data, l1.data)
