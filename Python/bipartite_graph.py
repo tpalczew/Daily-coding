@@ -34,3 +34,9 @@ students2 = {
 # teams = False 
 
 
+# BFS, DFS recursive, DFS iterative 
+
+# 1) BFS 
+
+
+
