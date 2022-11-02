@@ -47,30 +47,36 @@ pip install ipython-sql
 
 # SQL Basics
 
+```sql
 SELECT * 
 FROM tablename t
 INNER JOIN tablename2 f 
     ON t.id = f.id 
 GROUP BY t.id
 HAVING count()
+```
 
+```sql
 SELECT * 
 FROM tablename t
 WHERE (t.title='TITLE' AND t.start_date > '2022-10-31') 
     OR (t.title='TITLE 2')
+```
 
+```sql
 SELECT * 
 FROM tablename t 
 INNER JOIN 
     ON
 WHERE
+```
 
-
+```sql
 SELECT *
 FROM tablename t
 WHERE ( SELECT f.column1 
         FROM tablename2 f 
         WHERE a.something = t.something)
-
+```
 
 
