@@ -43,3 +43,34 @@ pip install ipython-sql
 %load_ext sql 
 
 %sql sqlite://
+
+
+# SQL Basics
+
+SELECT * 
+FROM tablename t
+INNER JOIN tablename2 f 
+    ON t.id = f.id 
+GROUP BY t.id
+HAVING count()
+
+SELECT * 
+FROM tablename t
+WHERE (t.title='TITLE' AND t.start_date > '2022-10-31') 
+    OR (t.title='TITLE 2')
+
+SELECT * 
+FROM tablename t 
+INNER JOIN 
+    ON
+WHERE
+
+
+SELECT *
+FROM tablename t
+WHERE ( SELECT f.column1 
+        FROM tablename2 f 
+        WHERE a.something = t.something)
+
+
+
