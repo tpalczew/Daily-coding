@@ -76,7 +76,7 @@ SELECT *
 FROM tablename t
 WHERE ( SELECT f.column1 
         FROM tablename2 f 
-        WHERE a.something = t.something)
+        WHERE t.something = f.something)
 ```
 
 
