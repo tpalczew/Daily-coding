@@ -25,3 +25,30 @@ target = 6
 result = twoSums(nums, target)
 print(result)	
 
+#---- 
+
+
+def twoSumsOpt(nums, target):
+	d = {} 
+	for i, elem in enumerate(nums):
+		needed_n = target - elem 
+		if needed_n in d:
+			return [d[needed_n], i]
+		d[elem] = i
+	return []
+
+
+nums = [3,4,7,2]
+target = 6
+
+
+result = twoSumsOpt(nums, target)
+print(result)
+ 
+	
+		
+				
+		 
+
+
+
