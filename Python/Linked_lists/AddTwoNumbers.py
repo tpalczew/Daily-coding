@@ -34,23 +34,27 @@ def addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[Li
 		while l1 or l2 or c:
 			if l1:
 				val1 = l1.val
+				#print(val1)
 			else:
 				val1 = 0
 			if l2:
 				val2 = l2.val
+				#print(val2)
 			else:
 				val2 = 0
 			t = val1 + val2 + c 
 			c = t // 10
 			v = t % 10
-			
-			temp.next = ListNode()
+			#print(c)
+			#print(v)			
+
+			temp.next = ListNode(v)
 			temp = temp.next 
 
 			if l1:
-				l1.next
+				l1 = l1.next
 			if l2:
-				l2.next 
+				l2 = l2.next 
 		return d.next 
 
 
@@ -69,9 +73,23 @@ l2.next.next = ListNode()
 l2.next.next.val = 4
 
 
+
+def print_numbers(l):
+	final_number = 0 
+	n = 1
+	while l:
+		final_number = final_number + (l.val * n)
+		n = n * 10
+		l = l.next
+	return(final_number)  
+		
+
+
+print(print_numbers(l1))
+print(print_numbers(l2))	
+
 result = addTwoNumbers(l1, l2)
 
-print(result)
-			
+print(print_numbers(result))	
 			
         
